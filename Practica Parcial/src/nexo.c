@@ -279,9 +279,9 @@ void mostrarHojasFechaseleccionada(eHojaServicio hojaServicio[], int tamHojaServ
 	{
 		if(hojaServicio[i].fecha.anio == anio && hojaServicio[i].fecha.mes == mes && hojaServicio[i].fecha.dia == dia)
 		{
-			 compararVehiculo_HojaServicio( vehiculo,  tamVehiculo,  hojaServicio[i]);
+			 j =compararVehiculo_HojaServicio( vehiculo,  tamVehiculo,  hojaServicio[i]);
 
-			listarHojasConVehiculo( hojaServicio,  tamHojaServicio,  vehiculo,  tamVehiculo);
+			listarHojaConVehiculo( hojaServicio[i],    vehiculo[j]);
 
 		}
 	}
