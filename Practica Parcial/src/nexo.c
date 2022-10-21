@@ -226,7 +226,7 @@ void listarHojasConVehiculo(eHojaServicio hojaServicio[], int tamHojaServicio, e
 
 	printf("\nLista de vouchers...\n\n"
 							   "%-20s %-20s %-20s %-20s\n", "PRECIO", "DESCRIPCION", "DESTINO", "FECHA");
-	for(i=0;i<tamVehiculo;i++)
+	for(i=0;i<tamHojaServicio;i++)
 	{
 		j = compararVehiculo_HojaServicio(vehiculo,  tamVehiculo,  hojaServicio[i]);
 		printf("%d\n",j);
