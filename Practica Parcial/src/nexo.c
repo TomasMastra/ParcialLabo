@@ -252,7 +252,7 @@ void mostrarVehiculoTipoSeleccionado(eVehiculo vehiculo[], int tamVehiculo, eTip
 
 		for(int i=0;i<tamVehiculo;i++)
 		{
-			if(vehiculo[i].tipoId == idTipo )
+			if(vehiculo[i].tipoId == idTipo && vehiculo[i].isEmpty!=-1 )
 			{
 				j= compararVehiculo_Tipo( tipo,  tamTipo,  vehiculo[i]);
 
@@ -281,7 +281,7 @@ void mostrarHojasFechaseleccionada(eHojaServicio hojaServicio[], int tamHojaServ
 		{
 			 j =compararVehiculo_HojaServicio( vehiculo,  tamVehiculo,  hojaServicio[i]);
 
-			listarHojaConVehiculo( hojaServicio[i],    vehiculo[j]);
+			listarHojaConVehiculo(hojaServicio[i],  vehiculo[j]);
 
 		}
 	}
