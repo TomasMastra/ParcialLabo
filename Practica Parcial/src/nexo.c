@@ -224,14 +224,13 @@ void listarHojasConVehiculo(eHojaServicio hojaServicio[], int tamHojaServicio, e
 	int i;
 	int j;
 
-	printf("\nLista de vouchers...\n\n"
+	printf("\nLista de vehiculos...\n\n"
 							   "%-20s %-20s %-20s %-20s\n", "PRECIO", "DESCRIPCION", "DESTINO", "FECHA");
 	for(i=0;i<tamHojaServicio;i++)
 	{
 		j = compararVehiculo_HojaServicio(vehiculo,  tamVehiculo,  hojaServicio[i]);
-		printf("%d\n",j);
 
-		if(j!=-1)
+		if(j!=-1 && hojaServicio[j].isEmpty!=-1)
 		{
 		listarHojaConVehiculo(hojaServicio[i], vehiculo[j]);
 		}
@@ -275,6 +274,8 @@ void mostrarHojasFechaseleccionada(eHojaServicio hojaServicio[], int tamHojaServ
 	getInt(&dia, "Ingrese el dia: ", "Ingrese el dia: ", 1, 31);
 
 
+	printf("\nLista de hojas...\n\n"
+							   "%-20s %-20s %-20s %-20s\n", "DESCRIPCION", "PRECIO", "NOMBRE VEHICULO", "FECHA");
 	for(int i=0;i<tamHojaServicio;i++)
 	{
 		if(hojaServicio[i].fecha.anio == anio && hojaServicio[i].fecha.mes == mes && hojaServicio[i].fecha.dia == dia)
