@@ -246,7 +246,7 @@ void mostrarVehiculoTipoSeleccionado(eVehiculo vehiculo[], int tamVehiculo, eTip
 {
 	int idTipo;
 		int j;
-		getInt(&idTipo, "Ingrese el Tipo: (1-SEDAN 3PTAS, 2-SEDAN 5PTAS, 3-CAMIONETA): ", "Ingrese el Tipo: (1-SEDAN 3PTAS, 2-SEDAN 5PTAS, 3-CAMIONETA): ", 2022, 2040);
+		getInt(&idTipo, "Ingrese el Tipo: (1-SEDAN 3PTAS, 2-SEDAN 5PTAS, 3-CAMIONETA): ", "Ingrese el Tipo: (1-SEDAN 3PTAS, 2-SEDAN 5PTAS, 3-CAMIONETA): ", 1, 3);
 
 
 
@@ -297,17 +297,17 @@ void mostrarSubemenu(eHojaServicio hojaServicio[], int tamHojaServicio, eVehicul
 			 	    {
 
 			 	    	getInt(&opcion, "-------------------------------------\n"
-			 	    			"1- Mostrar vehículos de un tipo seleccionado"
-			 	    			"2- Mostrar todas las hojas de servicio efectuadas en una fecha seleccionada"
-			 	    			"3- Informar importe total de las hojas de servicio realizadas en un vehículo seleccionado"
-			 	    			"4- Informar importe total"
+			 	    			"1- Mostrar vehículos de un tipo seleccionado\n"
+			 	    			"2- Mostrar todas las hojas de servicio efectuadas en una fecha seleccionada\n"
+			 	    			"3- Informar importe total de las hojas de servicio realizadas en un vehículo seleccionado\n"
+			 	    			"4- Informar importe total\n"
 			 	    								 "-------------------------------------\n",
 			 	    								 "Enter the option: "
 			 	    								 "-------------------------------------\n"
-													 "1- Mostrar vehículos de un tipo seleccionado"
-													 "2- Mostrar todas las hojas de servicio efectuadas en una fecha seleccionadaç"
-													 "3- Informar importe total de las hojas de servicio realizadas en un vehículo seleccionado"
-													 "4- Informar importe total"
+													 "1- Mostrar vehículos de un tipo seleccionado\n"
+													 "2- Mostrar todas las hojas de servicio efectuadas en una fecha seleccionada\n"
+													 "3- Informar importe total de las hojas de servicio realizadas en un vehículo seleccionado\n"
+													 "4- Informar importe total\n"
 			 	    								 "-------------------------------------\n"
 			 	    								 "Invalid option, Enter the correct option: ", 1, 10);
 
