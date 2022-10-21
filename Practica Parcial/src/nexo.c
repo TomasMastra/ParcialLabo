@@ -246,7 +246,7 @@ void mostrarVehiculoTipoSeleccionado(eVehiculo vehiculo[], int tamVehiculo, eTip
 {
 	int idTipo;
 		int j;
-		getInt(&tipo, "Ingrese el Tipo: (1-SEDAN 3PTAS, 2-SEDAN 5PTAS, 3-CAMIONETA): ", "Ingrese el Tipo: (1-SEDAN 3PTAS, 2-SEDAN 5PTAS, 3-CAMIONETA): ", 2022, 2040);
+		getInt(&idTipo, "Ingrese el Tipo: (1-SEDAN 3PTAS, 2-SEDAN 5PTAS, 3-CAMIONETA): ", "Ingrese el Tipo: (1-SEDAN 3PTAS, 2-SEDAN 5PTAS, 3-CAMIONETA): ", 2022, 2040);
 
 
 
