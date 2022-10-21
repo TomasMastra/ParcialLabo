@@ -256,7 +256,7 @@ void mostrarVehiculoTipoSeleccionado(eVehiculo vehiculo[], int tamVehiculo, eTip
 			{
 				j= compararVehiculo_Tipo( tipo,  tamTipo,  vehiculo[i]);
 
-				listarVehiculoConTipoo( vehiculo,  tamVehiculo,  vehiculo,  tamVehiculo);
+				listarVehiculoConTipo( vehiculo[i],  tipo[j]);
 
 			}
 		}
@@ -316,6 +316,7 @@ void mostrarSubemenu(eHojaServicio hojaServicio[], int tamHojaServicio, eVehicul
 			 	        {
 			 	            case 1:
 
+			 	            	 mostrarVehiculoTipoSeleccionado( vehiculo,  tamVehiculo,  tipo,  tamTipo);
 
 
 
